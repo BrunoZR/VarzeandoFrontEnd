@@ -1,0 +1,289 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".DetalhesQuadra.DetalhesQuadraView.DetalhesQuadra">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ConstraintPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/buttonVerNoMapa"
+            android:layout_width="338dp"
+            android:layout_height="84dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="76dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/button_mapa"
+            android:text="@string/ver_no_mapa"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/verMapa" />
+
+        <TextView
+            android:id="@+id/tituloLocal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/descQuadra"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="42dp"
+            android:text="@string/titulo_localizacao"
+            android:textColor="@color/colorDark"
+            android:textSize="16sp"
+            app:fontFamily="@font/roboto"
+            app:layout_constraintStart_toEndOf="@+id/iconMap"
+            app:layout_constraintTop_toBottomOf="@+id/descQuadra" />
+
+        <ImageView
+            android:id="@+id/verMapa"
+            android:layout_width="295dp"
+            android:layout_height="142dp"
+            android:layout_below="@+id/endereco"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/mapa"
+            android:clickable="true"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/endereco"
+            tools:srcCompat="@drawable/img_mapa" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButtonEstrela"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="256dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/floatingActionButtonAddPartida"
+            android:layout_toLeftOf="@+id/floatingActionButtonAddPartida"
+            android:backgroundTint="@color/colorWhite"
+            android:clickable="true"
+            android:src="@drawable/ic_avaliar"
+            app:backgroundTint="#FFFFFF"
+            app:fabSize="auto"
+            app:layout_constraintEnd_toStartOf="@+id/floatingActionButtonAddPartida"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/endereco"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tituloLocal"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/endereco"
+            android:textColor="@color/colorText"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tituloLocal" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButtonAddPartida"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="256dp"
+            android:layout_marginEnd="32dp"
+            android:backgroundTint="@color/colorWhite"
+            android:clickable="true"
+            android:src="@drawable/ic_add_partida"
+            app:backgroundTint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iconMap"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_below="@+id/descQuadra"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="44dp"
+            android:src="@drawable/ic_map"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descQuadra" />
+
+        <TextView
+            android:id="@+id/descQuadra"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tituloDesc"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/texto_descricao_quadra"
+            android:textColor="@color/colorText"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tituloDesc" />
+
+        <TextView
+            android:id="@+id/tituloDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="42dp"
+            android:text="@string/titulo_descricao"
+            android:textColor="@color/colorDark"
+            android:textSize="16sp"
+            app:fontFamily="@font/roboto"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/carouselView" />
+
+        <com.synnapps.carouselview.CarouselView
+            android:id="@+id/carouselView"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            app:autoPlay="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:slideInterval="3000">
+
+            <ImageView
+                android:id="@+id/imagemQuadraDetalhe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/quadra1" />
+
+            <TextView
+                android:id="@+id/nomeQuadra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="34dp"
+                android:layout_marginTop="150dp"
+                android:text="@string/nome_quadra"
+                android:textColor="@color/colorWhite"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <RatingBar
+                android:id="@+id/ratingBarEstrelas"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="190dp"
+                android:isIndicator="true"
+                android:max="5"
+                android:numStars="5"
+                android:progressBackgroundTint="@color/colorRatingBar"
+                android:progressTint="@color/colorAccent"
+                android:rating="4.6"
+                android:scaleX=".6"
+                android:scaleY=".6"
+                android:scrollbarSize="4dp"
+                android:secondaryProgressTint="#00FFFFFF"
+                android:stepSize="0.1"
+                android:transformPivotX="0dp"
+                android:transformPivotY="0dp" />
+
+            <TextView
+                android:id="@+id/qnt_Avaliacoes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="195dp"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/estado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="34dp"
+                android:layout_marginTop="225dp"
+                android:text="@string/nome_estado"
+                android:textColor="@color/colorWhite" />
+        </com.synnapps.carouselview.CarouselView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ConstraintPopUpAvaliar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="270dp"
+        android:background="@drawable/rounded"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageFechar"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_close_24" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Avalie a quadra"
+            android:textColor="@color/corVerdeMusgo"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_avaliar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_verde_claro"
+            android:text="Enviar"
+            android:textAllCaps="false"
+            android:textColor="@color/corBranca"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBarAvaliar" />
+
+        <RatingBar
+            android:id="@+id/ratingBarAvaliar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:isIndicator="false"
+            android:max="5"
+            android:numStars="5"
+            android:progressBackgroundTint="@color/colorRatingBar"
+            android:progressTint="@color/colorAccent"
+            android:secondaryProgressTint="#00FFFFFF"
+            android:stepSize="0.5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

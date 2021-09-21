@@ -1,0 +1,168 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_lista_partidas"
+    android:layout_width="295dp"
+    android:layout_height="195dp"
+    android:layout_marginTop="8dp"
+    android:paddingRight="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="20dp">
+
+        <RelativeLayout
+            android:layout_width="295dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imagemPartida"
+                android:layout_width="match_parent"
+                android:layout_height="106dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/partida1" />
+
+            <TextView
+                android:id="@+id/enderecoPartida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nomePartida"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="23dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="15dp"
+                android:layout_toStartOf="@+id/iconPerson"
+                android:text="@string/endereco_da_partida"
+                android:textColor="@color/corCinza"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/nomePartida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imagemPartida"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="140dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="19dp"
+                android:elevation="20dp"
+                android:text="@string/nome_da_partida"
+                android:textColor="@color/corVerdeEscuro"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/rectangleData"
+                android:layout_width="141dp"
+                android:layout_height="110dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="54dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/retangulo_data"
+                android:elevation="20dp" />
+
+            <TextView
+                android:id="@+id/horaPartida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dataPartida"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="43dp"
+                android:layout_marginRight="43dp"
+                android:elevation="20dp"
+                android:text="13:00"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/roboto" />
+
+            <ImageView
+                android:id="@+id/iconData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/rectangleData"
+                android:layout_alignLeft="@+id/rectangleData"
+                android:layout_alignTop="@+id/rectangleData"
+                android:layout_alignBottom="@+id/rectangleData"
+                android:layout_marginStart="29dp"
+                android:layout_marginLeft="29dp"
+                android:layout_marginTop="41dp"
+                android:layout_marginBottom="45dp"
+                android:elevation="20dp"
+                android:src="@drawable/ic_date"
+                app:layout_constraintStart_toStartOf="@+id/rectangleData"
+                app:layout_constraintTop_toTopOf="@+id/rectangleData" />
+
+            <TextView
+                android:id="@+id/dataPartida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/rectangleData"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginRight="31dp"
+                android:elevation="20dp"
+                android:text="10/07"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/roboto" />
+
+            <TextView
+                android:id="@+id/numeroMaxPartida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rectangleData"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-18dp"
+                android:layout_marginRight="45dp"
+                android:elevation="20dp"
+                android:text="/40"
+                android:textColor="#6E7271" />
+
+            <ImageView
+                android:id="@+id/iconPerson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rectangleData"
+                android:layout_marginTop="-15dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_toStartOf="@+id/numeroPessoasPartida"
+                android:layout_toLeftOf="@+id/numeroPessoasPartida"
+                android:elevation="20dp"
+                android:src="@drawable/ic_person"
+                app:layout_constraintEnd_toStartOf="@+id/numeroPessoasPartida" />
+
+            <TextView
+                android:id="@+id/numeroPessoasPartida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rectangleData"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-18dp"
+                android:layout_marginRight="67dp"
+                android:elevation="20dp"
+                android:text="10"
+                android:textColor="#6E7271" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

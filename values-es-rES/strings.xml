@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Varzeando</string>
+    <string name="digite_email">Introduce tu correo electrónico</string>
+    <string name="digite_senha">Ingresa tu contraseña</string>
+    <string name="nao_tem_conta">¿No tienes una cuenta?</string>
+    <string name="cadastre_se"><u>Registrarse</u></string>
+    <string name="digite_nome">Ingrese su nombre completo</string>
+    <string name="escolha_data">Elija su fecha de nacimiento</string>
+    <string name="complemente_cadastro">Complete su registro haciendo clic en <b><font color="# 6FC578">Continuar</font></b> y haga que su perfil sea más atractivo para que otros lo inviten a los partidos.</string>
+    <string name="digite_rua">Entra en tu calle</string>
+    <string name="digite_bairro">Entra en tu barrio</string>
+    <string name="cadastrar">Registrar</string>
+    <string name="digite_cidade">Entra en tu ciudad</string>
+    <string name="entrar">Entrar</string>
+    <string name="termos_condicoes">Al registrarse, acepta los Términos de servicio y la Política de privacidad.</string>
+    <string name="outros_dados">Otros datos</string>
+    <string name="atacante">Agresor</string>
+    <string name="posicao">Posición</string>
+    <string name="agora_nao">Ahora no</string>
+    <string name="continuar">Continuar</string>
+    <string name="encontre_quadras">Encuentra canchas, participa y crea partidos</string>
+    <string name="finalizar">Terminar</string>
+    <string name="crie_conta">Crea tu cuenta</string>
+    <string name="goleiro">Portero</string>
+    <string name="zagueiro">Defensor</string>
+    <string name="meio_campo">Medio campo</string>
+    <string name="colocar_email">¡Debes ingresar un correo electrónico!</string>
+    <string name="numero_residencia">Ingrese el número de la casa</string>
+    <string name="colocar_nome_completo">¡Debes ingresar tu nombre completo!</string>
+    <string name="colocar_senha">¡Debes ingresar una contraseña con al menos 6 caracteres!</string>
+    <string name="aceitar_termos_de_uso">Para utilizar la aplicación, debe aceptar los Términos de uso y la Política de privacidad.</string>
+    <string name="permissoes_negadas">¡Permisos denegados!</string>
+    <string name="aceitar_prtmissoes">¡Para usar la aplicación debes aceptar los permisos!</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="minha_localizacao">Mi ubicación actual</string>
+    <string name="login_com_sucesso">¡Inicio de sesión correcto!</string>
+    <string name="credenciais_erradas">¡Algunas de las credenciales (correo electrónico / contraseña) son incorrectas!</string>
+    <string name="erro_json">Se produjo un error por excepción JSON</string>
+    <string name="primeira_etapa_concluida">¡Primer paso de registro completado!</string>
+    <string name="primeira_etapa_errada">¡El primer paso del registro no funcionó!</string>
+    <string name="segunda_etapa_concluida">¡Segunda etapa de registro completada!</string>
+    <string name="segunda_etapa_errada">¡La segunda etapa de registro no funcionó!</string>
+    <string name="data_invalida">¡La fecha ingresada no es valida!</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_procurar_quadras">Cuadra</string>
+    <string name="menu_notificacoes">Notificaciones</string>
+    <string name="menu_perfil">Perfil</string>
+    <string name="menu_criar_partida">Crear partido</string>
+    <string name="ola">Hola,</string>
+    <string name="todas_quadras">Todos los campos</string>
+    <string name="quadras_proximas">Campos cercanos</string>
+    <string name="encontre_quadra">Encontrar un campo</string>
+</resources>

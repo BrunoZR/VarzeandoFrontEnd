@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".CadastroQuadra">
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/buttonFechar"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_fechar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tituloAddQuadra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="111dp"
+        android:text="@string/adicione_quadra"
+        android:textColor="@color/corVerdeMusgo"
+        android:textSize="28sp"
+        app:fontFamily="@font/roboto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tituloDados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="37dp"
+        android:text="@string/titulo_dados"
+        android:textColor="@color/corTextoCinza"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/roboto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloAddQuadra" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:width="309dp"
+        android:height="0.2dp"
+        android:background="@color/corLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloDados" />
+
+    <TextView
+        android:id="@+id/tituloNomeQuadra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="33dp"
+        android:text="@string/cd_nome_quadra"
+        android:textColor="@color/corTextoCinzaClaro"
+        android:textStyle="bold"
+        app:fontFamily="@font/roboto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line" />
+
+    <EditText
+        android:id="@+id/cd_nomeQuadra"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingStart="23dp"
+        android:paddingLeft="32dp"
+        android:textColor="@color/corTextoInput"
+        android:textColorHighlight="#926FC578"
+        android:textColorLink="@color/corVerdeClaro"
+        android:textCursorDrawable="@drawable/cor_cursor"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloNomeQuadra" />
+
+
+    <TextView
+        android:id="@+id/tituloDescricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/cd_descricao"
+        android:textColor="@color/corTextoCinzaClaro"
+        android:textStyle="bold"
+        app:fontFamily="@font/roboto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cd_nomeQuadra" />
+
+    <EditText
+        android:id="@+id/cd_descQuadra"
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:inputType="textMultiLine|textPersonName"
+        android:paddingStart="23dp"
+        android:paddingLeft="32dp"
+        android:textColor="@color/corTextoInput"
+        android:textColorHighlight="#926FC578"
+        android:textColorLink="@color/corVerdeClaro"
+        android:textCursorDrawable="@drawable/cor_cursor"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloDescricao" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="@string/max_crt"
+        android:textColor="@color/corTextoCinzaClaro"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cd_descQuadra" />
+
+    <TextView
+        android:id="@+id/tituloFotos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="9dp"
+        android:text="@string/cd_fotos"
+        android:textColor="@color/corTextoCinzaClaro"
+        android:textStyle="bold"
+        app:fontFamily="@font/roboto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/upload_imgs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloFotos" />
+
+    <Button
+        android:id="@+id/buttonAddImg"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/button_add_img"
+        android:text="+"
+        android:textColor="@color/corVerdeClaro"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upload_imgs" />
+
+    <TextView
+        android:id="@+id/tituloAvaliacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Avaliação"
+        android:textColor="@color/corTextoCinzaClaro"
+        android:textStyle="bold"
+        app:fontFamily="@font/roboto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAddImg" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:isIndicator="false"
+        android:max="5"
+        android:numStars="5"
+        android:progressBackgroundTint="@color/colorRatingBar"
+        android:progressTint="@color/colorAccent"
+        android:secondaryProgressTint="#00FFFFFF"
+        android:stepSize="0.5"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloAvaliacao" />
+
+    <TextView
+        android:id="@+id/tituloEndereços"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/titulo_enderecos"
+        android:textColor="@color/corTextoCinza"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/roboto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:width="309dp"
+        android:height="0.2dp"
+        android:background="@color/corLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloEndereços" />
+
+    <TextView
+        android:id="@+id/tituloNomeRua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="33dp"
+        android:text="@string/cd_nome_rua"
+        android:textColor="@color/corTextoCinzaClaro"
+        android:textStyle="bold"
+        app:fontFamily="@font/roboto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line2" />
+
+    <EditText
+        android:id="@+id/cd_nomeRua"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingStart="23dp"
+        android:paddingLeft="32dp"
+        android:textColor="@color/corTextoInput"
+        android:textColorHighlight="#926FC578"
+        android:textColorLink="@color/corVerdeClaro"
+        android:textCursorDrawable="@drawable/cor_cursor"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloNomeRua" />
+
+    <TextView
+        android:id="@+id/tituloNumRua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/cd_numero"
+        android:textColor="@color/corTextoCinzaClaro"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cd_nomeRua" />
+
+    <EditText
+        android:id="@+id/cd_numRua"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:inputType="number"
+        android:paddingStart="23dp"
+        android:paddingLeft="32dp"
+        android:textColor="@color/corTextoInput"
+        android:textColorHighlight="#926FC578"
+        android:textColorLink="@color/corVerdeClaro"
+        android:textCursorDrawable="@drawable/cor_cursor"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloNumRua" />
+
+    <TextView
+        android:id="@+id/tituloNomeBairro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/cd_nome_bairro"
+        android:textColor="@color/corTextoCinzaClaro"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cd_numRua" />
+
+    <EditText
+        android:id="@+id/cd_nomeBairro"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingStart="23dp"
+        android:paddingLeft="32dp"
+        android:textColor="@color/corTextoInput"
+        android:textColorHighlight="#926FC578"
+        android:textColorLink="@color/corVerdeClaro"
+        android:textCursorDrawable="@drawable/cor_cursor"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloNomeBairro" />
+
+    <Button
+        android:id="@+id/buttonAdicionarQuadra"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/button_adicionar"
+        android:text="@string/bt_adicionar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/corCinza"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cd_nomeBairro" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

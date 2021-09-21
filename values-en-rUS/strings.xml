@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Varzeando</string>
+    <string name="digite_email">Enter your e-mail</string>
+    <string name="digite_senha">Enter your password</string>
+    <string name="nao_tem_conta">Don\'t have an account?</string>
+    <string name="cadastre_se"><u>Sign up</u></string>
+    <string name="digite_nome">Enter your full name</string>
+    <string name="escolha_data">Choose your date of birth</string>
+    <string name="complemente_cadastro">Complete your registration by clicking <b><font color="#6FC578">Continue</font></b> and make your profile more attractive for others to invite you to matches.</string>
+    <string name="digite_rua">Enter your street</string>
+    <string name="digite_bairro">Enter your neighborhood</string>
+    <string name="digite_cidade">Enter your city</string>
+    <string name="cadastrar">Register</string>
+    <string name="entrar">Enter</string>
+    <string name="termos_condicoes">By signing up, you agree to the Terms of Service and Privacy Policy</string>
+    <string name="outros_dados">Other data</string>
+    <string name="atacante">Attacker</string>
+    <string name="posicao">Position</string>
+    <string name="continuar">Continue</string>
+    <string name="agora_nao">Not now</string>
+    <string name="encontre_quadras">Find courts, participate and create matches</string>
+    <string name="finalizar">Finish</string>
+    <string name="crie_conta">Create your account</string>
+    <string name="goleiro">Goalkeeper</string>
+    <string name="zagueiro">Defender</string>
+    <string name="meio_campo">Midfield</string>
+    <string name="colocar_email">You need to enter an email!</string>
+    <string name="numero_residencia">Enter house number</string>
+    <string name="colocar_nome_completo">You need to enter your full name!</string>
+    <string name="colocar_senha">You must enter a password with at least 6 characters!</string>
+    <string name="aceitar_termos_de_uso">To use the app, you have to accept the Terms of Use and Privacy Policy.</string>
+    <string name="permissoes_negadas">Permissions Denied!</string>
+    <string name="aceitar_prtmissoes">To use the app you must accept permissions!</string>
+    <string name="confirmar">Confirm</string>
+    <string name="minha_localizacao">My current location</string>
+    <string name="login_com_sucesso">Login successful!</string>
+    <string name="erro_json">" An error occurred by JSON exception"</string>
+    <string name="credenciais_erradas">Some of the credentials (email/password) are wrong!</string>
+    <string name="primeira_etapa_concluida">First step of registration completed!</string>
+    <string name="primeira_etapa_errada">The first step of the registration did not work!</string>
+    <string name="segunda_etapa_concluida">Second stage of registration completed!</string>
+    <string name="segunda_etapa_errada">The second stage of registration did not work!</string>
+    <string name="data_invalida">The date entered is not valid!</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_procurar_quadras">Court</string>
+    <string name="menu_notificacoes">Notifications</string>
+    <string name="menu_perfil">Profile</string>
+    <string name="menu_criar_partida">Create match</string>
+    <string name="ola">Hello,</string>
+    <string name="todas_quadras">All pitches</string>
+    <string name="quadras_proximas">Closer pitches</string>
+    <string name="encontre_quadra">Find a pitch</string>
+</resources>

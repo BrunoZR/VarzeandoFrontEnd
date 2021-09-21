@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">Varzeando</string>
+    <string name="digite_email">Digite o seu e-mail</string>
+    <string name="digite_senha">Digite a sua senha</string>
+    <string name="nao_tem_conta">Não tem uma conta?</string>
+    <string name="cadastre_se"><u>Cadastre-se</u></string>
+    <string name="digite_nome">Digite o seu nome completo</string>
+    <string name="escolha_data">Escolha a data do seu nascimento</string>
+    <string name="complemente_cadastro">Complemente seu cadastro clicando em <b><font color='#6FC578'>Continuar</font></b> e deixe seu perfil mais atrativo para outras pessoas te convidarem para partidas.</string>
+    <string name="digite_rua">Digite a sua rua</string>
+    <string name="digite_bairro">Digite o seu bairro</string>
+    <string name="digite_cidade">Digite a sua cidade</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="entrar">Entrar</string>
+    <string name="termos_condicoes">Ao se inscrever, você concorda com os Termos de Serviço e a Política de Privacidade</string>
+    <string name="outros_dados">Outros dados</string>
+    <string name="atacante">Atacante</string>
+    <string name="posicao">Posição</string>
+    <string name="continuar">Continuar</string>
+    <string name="agora_nao">Agora não</string>
+    <string name="encontre_quadras">Encontre quadras, participe e crie partidas</string>
+    <string name="finalizar">Finalizar</string>
+    <string name="meio_campo">Meio-campo</string>
+    <string name="zagueiro">Zagueiro</string>
+    <string name="goleiro">Goleiro</string>
+    <string name="crie_conta">Crie a sua conta</string>
+    <string name="title_activity_tela_mapa_usuario" translatable="false">Map</string>
+    <string name="numero_residencia">Digite o número da residência</string>
+    <string name="colocar_nome_completo">Você precisa colocar seu nome completo!</string>
+    <string name="colocar_email">Você precisa colocar um email!</string>
+    <string name="colocar_senha">Você precisa colocar uma senha com no mínimo 6 caracteres!</string>
+    <string name="aceitar_termos_de_uso">Para usar o aplicativo, você tem que aceitar os Termos de Uso e a Política de Privacidade.</string>
+    <string name="data_invalida">A data inserida não é valida!</string>
+    <string name="permissoes_negadas">Permissões negadas!</string>
+    <string name="aceitar_prtmissoes">Para utilizar o aplicativo você deve aceitar as permissões!</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="minha_localizacao">Minha localização atual</string>
+    <string name="login_com_sucesso">Login realizado com sucesso!</string>
+    <string name="credenciais_erradas">Alguma das credenciais (email/senha) está errada!</string>
+    <string name="erro_json">Um erro ocorreu pela JSON exception</string>
+    <string name="primeira_etapa_concluida">Primeira etapa do cadastro realizada!</string>
+    <string name="primeira_etapa_errada">A primeira etapa do cadastro não deu certo!</string>
+    <string name="segunda_etapa_concluida">Segunda etapa do cadastro realizada!</string>
+    <string name="segunda_etapa_errada">A segunda etapa do cadastro não deu certo!</string>
+    <string name="google_maps_key" translatable="false">AIzaSyC6scR7tWUrbED2Fj0PLbwMXyqoFNsYMaM</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_procurar_quadras">Quadras</string>
+    <string name="menu_notificacoes">Notificações</string>
+    <string name="menu_perfil">Perfil</string>
+    <string name="menu_criar_partida">Criar partida</string>
+    <string name="ola">Olá,</string>
+    <string name="encontre_quadra">Encontre uma quadra</string>
+    <string name="todas_quadras">Todas quadras</string>
+    <string name="quadras_proximas">Quadras proximas</string>
+    <string name="nome_quadra" translatable="false">Quadra 1</string>
+    <string name="nome_estado" translatable="false">SP, São Paulo</string>
+    <string name="titulo_descricao" translatable="false">Descrição</string>
+    <string name="texto_descricao_quadra" translatable="false">-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</string>
+    <string name="titulo_localizacao" translatable="false">Localização</string>
+    <string name="endereco">Rua, número - Bairro</string>
+    <string name="partidas">Partidas</string>
+    <string name="suas_partidas">Suas Partidas</string>
+    <string name="nome_da_partida">Partida 1</string>
+    <string name="endereco_da_partida">Endereço</string>
+    <string name="nome_partida">Partida 1</string>
+    <string name="nome_estado_partida">SP, São Paulo</string>
+    <string name="titulo_descricao_partida">Descrição</string>
+    <string name="texto_descricao_partida">Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque convallis, aliquam tempor non rutrum tellus sagittis blandit dictum dignissim, phasellus metus natoque magnis ante posuere lacus penatibus. Aliquam primis ligula ornare curae nibh arcu viverra efficitur finibus, tempor facilisis dui consequat suspendisse luctus a convallis eu cras, tortor morbi pharetra cursus tempus at integer dignissim. Erat purus dolor primis pharetra leo facilisis mus orci suscipit, metus fringilla vivamus volutpat vehicula quis interdum quam, neque turpis urna sem convallis diam lacinia himenaeos. Hendrerit bibendum nibh magna feugiat fusce tincidunt penatibus erat netus, senectus iaculis fringilla tempor vitae vel lobortis lacus, quam ullamcorper ipsum donec elit mus accumsan consequat.</string>
+    <string name="titulo_localizacao_partida">Localização</string>
+    <string name="endereco_partida">Rua, número - Bairro</string>
+    <string name="ver_no_mapa">Ver no mapa</string>
+    <string name="paticipar">Participar</string>
+    <string name="data_hora_partida">Sexta,10 Julho, 14:00</string>
+    <string name="mes_partida">JUL</string>
+    <string name="dia_partida">10</string>
+    <string name="nome_pessoa">Nome Pessoa</string>
+    <string name="pocicao_pessoa">Posição</string>
+    <string name="titulo_confirmados">Confirmados</string>
+    <string name="adicione_quadra">Adicione uma quadra</string>
+    <string name="titulo_dados">Dados</string>
+    <string name="cd_nome_quadra">Nome da quadra</string>
+    <string name="cd_descricao">Descrição</string>
+    <string name="max_crt">Máximo de 300 catacteres</string>
+    <string name="cd_fotos">Fotos</string>
+    <string name="titulo_enderecos">Endereços</string>
+    <string name="cd_nome_rua">Rua</string>
+    <string name="cd_numero">Número</string>
+    <string name="cd_nome_bairro">Bairro</string>
+    <string name="bt_adicionar">Adicionar</string>
+</resources>

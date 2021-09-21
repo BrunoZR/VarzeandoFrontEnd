@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityTelaDetalhesPartida">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imagePartida"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:background="@drawable/partida1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nomePartida"
+        android:layout_width="118dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="170dp"
+        android:text="@string/nome_partida"
+        android:textColor="@color/colorWhite"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imagePartida"
+        app:layout_constraintTop_toTopOf="@+id/imagePartida" />
+
+    <TextView
+        android:id="@+id/estado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/nome_estado_partida"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintStart_toStartOf="@+id/imagePartida"
+        app:layout_constraintTop_toBottomOf="@+id/nomePartida" />
+
+    <TextView
+        android:id="@+id/dataPartida"
+        android:layout_width="125dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/data_hora_partida"
+        android:textColor="@color/colorDark"
+        android:textSize="14sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintStart_toEndOf="@+id/iconCalendario"
+        app:layout_constraintTop_toBottomOf="@+id/imagePartida" />
+
+    <TextView
+        android:id="@+id/tituloDescPartida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="42dp"
+        android:text="@string/titulo_descricao_partida"
+        android:textColor="@color/colorDark"
+        android:textSize="16sp"
+        app:fontFamily="@font/roboto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="56dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        app:cardBackgroundColor="@color/corVerdeEscuro"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagePartida">
+
+        <TextView
+            android:id="@+id/mesPartida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="9dp"
+            android:text="@string/mes_partida"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/diaPartida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="26dp"
+            android:text="@string/dia_partida"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="56dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        app:cardBackgroundColor="@color/colorWhite"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/imagePartida">
+
+        <TextView
+            android:id="@+id/numPessoasPartida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="33dp"
+            android:text="10/20"
+            android:textColor="@color/colorDark"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/iconPessoas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_pessoas" />
+    </androidx.cardview.widget.CardView>
+
+    <com.ms.square.android.expandabletextview.ExpandableTextView
+        android:id="@+id/expandirTexto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        app:animDuration="200"
+        app:maxCollapsedLines="4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloDescPartida"
+        >
+
+        <TextView
+            android:id="@id/expandable_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorText"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@id/expand_collapse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/corVerdeMusgo"
+            android:padding="14dp" />
+    </com.ms.square.android.expandabletextview.ExpandableTextView>
+
+            <Button
+                android:id="@+id/buttonParticipar"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:background="@drawable/participar"
+                android:text="@string/paticipar"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/expandirTexto" />
+
+            <ImageView
+                android:id="@+id/iconMap"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_below="@+id/expandirTexto"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="44dp"
+                android:src="@drawable/ic_map"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonParticipar" />
+
+    <TextView
+        android:id="@+id/tituloLocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/expandirTexto"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="42dp"
+        android:text="@string/titulo_localizacao_partida"
+        android:textColor="@color/colorDark"
+        android:textSize="16sp"
+        app:fontFamily="@font/roboto"
+        app:layout_constraintStart_toEndOf="@+id/iconMap"
+        app:layout_constraintTop_toBottomOf="@+id/buttonParticipar" />
+
+            <TextView
+                android:id="@+id/endereco"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tituloLocal"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/endereco_partida"
+                android:textColor="@color/colorText"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tituloLocal" />
+
+
+            <ImageView
+                android:id="@+id/verMapa"
+                android:layout_width="295dp"
+                android:layout_height="142dp"
+                android:layout_below="@+id/endereco"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:background="@drawable/mapa"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/endereco"
+                tools:srcCompat="@drawable/img_mapa" />
+
+            <Button
+                android:id="@+id/buttonVerNoMapa"
+                android:layout_width="338dp"
+                android:layout_height="84dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="76dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:background="@drawable/button_mapa"
+                android:text="@string/ver_no_mapa"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/verMapa" />
+
+            <ImageView
+                android:id="@+id/iconCalendario"
+                android:layout_width="35dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="39dp"
+                android:src="@drawable/ic_calendario"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imagePartida" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>

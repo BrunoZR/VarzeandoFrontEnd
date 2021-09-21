@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="posicoes">
+        <item>@string/atacante</item>
+        <item>@string/meio_campo</item>
+        <item>@string/zagueiro</item>
+        <item>@string/goleiro</item>
+    </string-array>
+</resources>

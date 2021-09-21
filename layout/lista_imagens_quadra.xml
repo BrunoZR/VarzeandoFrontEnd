@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_lista_pesquisa_partida"
+    android:layout_width="match_parent"
+    android:layout_height="72dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewImgQuadra"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_img"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="5dp"
+            app:cardCornerRadius="16dp">
+
+            <ImageView
+                android:id="@+id/uploadImgs"
+                android:layout_width="57dp"
+                android:layout_height="57dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/img_quadra"/>
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/cd_nomeQuadra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="74dp"
+            android:layout_marginLeft="74dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/roboto"
+            android:text="Nomeimagem.type"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/corVerdeClaro"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/roboto" />
+
+        <ImageView
+            android:id="@+id/iconDeletar"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="370dp"
+            android:layout_marginLeft="370dp"
+            android:layout_marginTop="23dp"
+            android:src="@drawable/ic_deletar" />
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

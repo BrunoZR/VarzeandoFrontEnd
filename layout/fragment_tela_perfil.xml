@@ -1,0 +1,293 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/ola"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:textStyle="normal"
+            app:fontFamily="@font/roboto"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tv_nomeUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@+id/textView8"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginRight="35dp"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardCornerRadius="250dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="250dp">
+
+                <ImageView
+                    android:id="@+id/imagemPerfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/imagem_perfil"
+                    android:clickable="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/imagem_perfil" />
+
+            </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Goleiro"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="76dp"
+            app:cardBackgroundColor="@color/corCinzaClaro"
+            app:cardCornerRadius="250dp"
+            app:layout_constraintStart_toEndOf="@+id/defesa"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textGoleiro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:text="GOL"
+                android:textColor="@color/colorWhite"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/amigavel"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            app:cardBackgroundColor="@color/corVerdeClaro"
+            app:cardCornerRadius="250dp"
+            app:layout_constraintBottom_toTopOf="@+id/textPartidas"
+            app:layout_constraintStart_toEndOf="@+id/bomDeBola"
+            app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/ic_baseline_thumb_up_24" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textPosicoes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="120dp"
+            android:text="Posições"
+            android:textColor="@color/corVerdeEscuro"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/roboto"
+            app:layout_constraintEnd_toStartOf="@+id/cardView"
+            app:layout_constraintHorizontal_bias="0.556"
+            app:layout_constraintStart_toEndOf="@+id/textPartidas"
+            app:layout_constraintTop_toBottomOf="@+id/defesa" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ataque"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="76dp"
+            android:layout_marginEnd="120dp"
+            app:cardBackgroundColor="@color/corVerdeEscuro"
+            app:cardCornerRadius="250dp"
+            app:layout_constraintEnd_toStartOf="@+id/cardView"
+            app:layout_constraintStart_toEndOf="@+id/lider"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textAtaque"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:text="ATA"
+                android:textColor="@color/colorWhite"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textPartidas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="4dp"
+            android:text="Avaliações"
+            android:textColor="@color/corVerdeEscuro"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/amigavel" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bomDeBola"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:foregroundGravity="clip_vertical|center_horizontal"
+            app:cardBackgroundColor="@color/corVerdeClaro"
+            app:cardCornerRadius="250dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/ic_baseline_sports_soccer_24" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/defesa"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="76dp"
+            app:cardBackgroundColor="@color/corCinza"
+            app:cardCornerRadius="250dp"
+            app:layout_constraintStart_toEndOf="@+id/ataque"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textDefesa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:text="DEF"
+                android:textColor="@color/colorWhite"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/lider"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            app:cardBackgroundColor="@color/corVerdeClaro"
+            app:cardCornerRadius="250dp"
+            app:layout_constraintStart_toEndOf="@+id/amigavel"
+            app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/ic_baseline_tag_faces_24" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/suas_partidas"
+            android:textColor="@color/corPreto"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textPartidas" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_suasPartidas"
+            android:layout_width="295dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="32dp"
+            android:elevation="300dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton3"
+            android:layout_width="29dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="85dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:clickable="true"
+            android:src="@drawable/ic_editar_perfil"
+            app:backgroundTint="#6FC578"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:maxImageSize="50dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButtonLogOut"
+            android:layout_width="29dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:clickable="true"
+            android:src="@drawable/ic_baseline_logout_24"
+            app:backgroundTint="@color/design_default_color_error"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:maxImageSize="50dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Varzeando</string>
+    <string name="digite_email">Entrer votre Email</string>
+    <string name="digite_senha">Tapez votre mot de passe</string>
+    <string name="nao_tem_conta">Vous n\'avez pas de compte ?</string>
+    <string name="cadastre_se"><u>Inscrivez-vous</u></string>
+    <string name="digite_nome">Entrez votre nom complet</string>
+    <string name="escolha_data">Choisissez votre date de naissance</string>
+    <string name="complemente_cadastro">Terminez votre inscription en cliquant sur <b><font color="#6FC578">Continuer</font></b> et rendez votre profil plus attrayant pour que les autres vous invitent à des matchs.</string>
+    <string name="digite_rua">Entrez dans votre rue</string>
+    <string name="digite_bairro">Entrez dans votre quartier</string>
+    <string name="digite_cidade">Entrez dans votre ville</string>
+    <string name="cadastrar">S\'inscrire</string>
+    <string name="entrar">Entrer</string>
+    <string name="termos_condicoes">En vous inscrivant, vous acceptez les conditions d\'utilisation et la politique de confidentialité</string>
+    <string name="outros_dados">Autre informations</string>
+    <string name="atacante">Attaquant</string>
+    <string name="posicao">Positionner</string>
+    <string name="continuar">Continuer</string>
+    <string name="agora_nao">Pas maintenant</string>
+    <string name="encontre_quadras">Trouvez des terrains, participez et créez des matchs</string>
+    <string name="finalizar">Finir</string>
+    <string name="crie_conta">Créez votre compte</string>
+    <string name="goleiro">Gardien de but</string>
+    <string name="zagueiro">Défenseur</string>
+    <string name="meio_campo">Milieu de terrain</string>
+    <string name="colocar_email">Vous devez saisir un e-mail!</string>
+    <string name="numero_residencia">" Entrer le numéro de la maison"</string>
+    <string name="colocar_nome_completo">Vous devez entrer votre nom complet!</string>
+    <string name="colocar_senha">Vous devez saisir un mot de passe d\'au moins 6 caractères !</string>
+    <string name="aceitar_termos_de_uso">Pour utiliser l\'application, vous devez accepter les conditions d\'utilisation et la politique de confidentialité.</string>
+    <string name="permissoes_negadas">Autorisations refusées!</string>
+    <string name="aceitar_prtmissoes">Pour utiliser l\'application, vous devez accepter les autorisations!</string>
+    <string name="confirmar">Confirmer</string>
+    <string name="minha_localizacao">Ma position actuelle</string>
+    <string name="login_com_sucesso">Connexion réussie!</string>
+    <string name="credenciais_erradas">Certaines informations d\'identification (e-mail/mot de passe) sont erronées !</string>
+    <string name="erro_json">Une erreur s\'est produite par une exception JSON</string>
+    <string name="primeira_etapa_concluida">Première étape d\'inscription terminée!</string>
+    <string name="primeira_etapa_errada">"La première étape de l'enregistrement n'a pas fonctionné! "</string>
+    <string name="segunda_etapa_concluida">Deuxième étape d\'inscription terminée!</string>
+    <string name="segunda_etapa_errada">La deuxième étape de l\'enregistrement n\'a pas fonctionné!</string>
+    <string name="data_invalida">La date saisie n\'est pas valide!</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_procurar_quadras">Bloc</string>
+    <string name="menu_notificacoes">Notifications</string>
+    <string name="menu_perfil">Profil</string>
+    <string name="menu_criar_partida">Créer une correspondance</string>
+    <string name="ola">Salut,</string>
+    <string name="encontre_quadra">Trouver un terrain</string>
+    <string name="todas_quadras">Tous les champs</string>
+    <string name="quadras_proximas">Champs voisins</string>
+</resources>

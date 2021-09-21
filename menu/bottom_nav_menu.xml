@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuHome"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/menu_home"/>
+
+    <item
+        android:id="@+id/menuCriarPartidas"
+        android:icon="@drawable/ic_baseline_sports_soccer_24"
+        android:title="@string/menu_criar_partida"/>
+
+    <item android:id="@+id/placeholder"
+        android:title=""
+        android:enabled="false"/>
+
+    <item
+        android:id="@+id/menuNotificacoes"
+        android:icon="@drawable/ic_baseline_notifications_24"
+        android:title="@string/menu_notificacoes" />
+
+    <item
+        android:id="@+id/menuPerfil"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="@string/menu_perfil" />
+</menu>

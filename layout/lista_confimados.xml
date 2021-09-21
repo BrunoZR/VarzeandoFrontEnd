@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_lista_confirmados"
+    android:layout_width="wrap_content"
+    android:layout_height="60dp"
+    android:layout_marginTop="8dp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginTop="2dp"
+            app:cardCornerRadius="30dp">
+
+            <ImageView
+                android:id="@+id/imagemPessoa"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/imagem_perfil" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/nomePessoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/nome_pessoa"
+            android:textColor="@color/colorDark" />
+
+        <TextView
+            android:id="@+id/posicaoPessoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/pocicao_pessoa"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/imagemEstrela"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_estrela" />
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
